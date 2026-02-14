@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Reservas - Instrucciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .credentials {
+            background: #fff;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        .credentials strong {
+            color: #667eea;
+        }
+        
+        .btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin: 8px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="icon">📅</span>
+        <h1>Sistema de Reservas</h1>
+        <p class="subtitle">Bienvenido al sistema completo de gestión de reservas</p>
+        
+        <div class="card">
+            <h2>🚀 Cómo Empezar</h2>
+            <p><strong>Paso 1:</strong> Abre el archivo <code>login.html</code> en tu navegador web</p>
+            <p><strong>Paso 2:</strong> Usa una de las credenciales de prueba (ver abajo)</p>
+            <p><strong>Paso 3:</strong> Explora las funcionalidades según tu rol</p>
+        </div>
+        
+        <div class="card">
+            <h2>🔑 Credenciales de Prueba</h2>
+            
+            <div class="credentials">
+                <strong>👑 ADMINISTRADOR</strong><br>
+                Correo: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d3c393034331d2f382e382f2b3c2e733e3230">[email&#160;protected]</a><br>
+                Contraseña: admin123
+            </div>
+            
+            <div class="credentials">
+                <strong>⚙️ OPERADOR</strong><br>
+                Correo: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="107f60756271747f625062756375626671633e737f7d">[email&#160;protected]</a><br>
+                Contraseña: operador123
+            </div>
+            
+            <div class="credentials">
+                <strong>👤 CLIENTE</strong><br>
+                Correo: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="620817030c22010e0b070c16074c010d0f">[email&#160;protected]</a><br>
+                Contraseña: juan123
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>📂 Estructura del Proyecto</h2>
+            <ul>
+                <li><strong>login.html</strong> - Página de inicio de sesión</li>
+                <li><strong>pages/cliente.html</strong> - Vista del cliente</li>
+                <li><strong>pages/dashboard.html</strong> - Vista de admin/operador</li>
+                <li><strong>js/</strong> - Todos los archivos JavaScript</li>
+                <li><strong>css/styles.css</strong> - Estilos personalizados</li>
+                <li><strong>README.md</strong> - Documentación completa</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>✨ Funcionalidades Implementadas</h2>
+            <ul>
+                <li>✅ Arquitectura de datos con localStorage</li>
+                <li>✅ Sistema de autenticación y sesiones</li>
+                <li>✅ Operaciones CRUD completas</li>
+                <li>✅ Sistema de JOIN (relación entre tablas)</li>
+                <li>✅ Interfaz de cliente (crear y ver reservas)</li>
+                <li>✅ Dashboard de gestión (admin/operador)</li>
+                <li>✅ Filtro de agenda diaria (reservas de hoy)</li>
+                <li>✅ Protección de rutas según roles</li>
+                <li>✅ Validaciones de fecha y hora</li>
+                <li>✅ Estadísticas del sistema</li>
+  

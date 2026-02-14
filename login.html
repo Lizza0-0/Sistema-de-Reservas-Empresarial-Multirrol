@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Reservas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="login-page">
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-5 col-lg-4">
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <!-- Logo/Título -->
+                        <div class="text-center mb-4">
+                            <div class="logo-circle mb-3">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h2 class="fw-bold mb-2">Sistema de Reservas</h2>
+                            <p class="text-muted">Ingresa tus credenciales para continuar</p>
+                        </div>
+
+                        <!-- Formulario de Login -->
+                        <form id="loginForm">
+                            <!-- Campo Email -->
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">
+                                    <i class="fas fa-envelope me-2"></i>Correo Electrónico
+                                </label>
+                                <input 
+                                    type="email" 
+                                    class="form-control form-control-lg" 
+                                    id="correo" 
+                                    placeholder="tu@correo.com"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Campo Password -->
+                            <div class="mb-4">
+                                <label for="password" class="form-label">
+                                    <i class="fas fa-lock me-2"></i>Contraseña
+                                </label>
+                                <input 
+                                    type="password" 
+                                    class="form-control form-control-lg" 
+                                    id="password" 
+                                    placeholder="••••••••"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Botón Login -->
+                            <button type="submit" class="btn btn-primary btn-lg w-100 mb-3">
+                                <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                            </button>
+                        </form>
+
+                        <!-- Link a Registro -->
+                        <div class="text-center mt-3">
+                            <p class="text-muted">
+                                ¿No tienes cuenta? 
+                                <a href="registro.html" class="text-decoration-none fw-bold">
+                                    <i class="fas fa-user-plus me-1"></i>Regístrate aquí
+                                </a>
+                            </p>
+                        </div>
+
+                        <!-- Usuarios de prueba -->
+                        <div class="alert alert-info mt-4" role="alert">
+                            <strong><i class="fas fa-info-circle me-2"></i>Usuarios de prueba:</strong>
+                            <ul class="mb-0 mt-2 small">
+                                <li><strong>Admin:</strong> admin@reservas.com / admin123</li>
+                                <li><strong>Operador:</strong> operador@reservas.com / operador123</li>
+                                <li><strong>Cliente:</strong> juan@cliente.com / juan123</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
